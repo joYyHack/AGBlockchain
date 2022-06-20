@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AGBlockchain", "AGBlockchain.Main\AGBlockchain.Main.csproj", "{D58BA3FD-3A75-4D93-AAC5-66373425CDA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AGBlockchain.Service", "AGBlockchain.Service\AGBlockchain.Service.csproj", "{6CDC790E-8639-43DC-BE01-34D6B825268F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AGBlockchain.Structure", "AGBlockchain.Structure\AGBlockchain.Structure.csproj", "{895DE529-69B1-4053-A842-EFDF8A2F2BBF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AGBlockchain.Utils", "AGUtils\AGUtils.csproj", "{C9BFCF25-6B1C-4F0F-896A-86EF63B7A973}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D58BA3FD-3A75-4D93-AAC5-66373425CDA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D58BA3FD-3A75-4D93-AAC5-66373425CDA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D58BA3FD-3A75-4D93-AAC5-66373425CDA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D58BA3FD-3A75-4D93-AAC5-66373425CDA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CDC790E-8639-43DC-BE01-34D6B825268F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CDC790E-8639-43DC-BE01-34D6B825268F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CDC790E-8639-43DC-BE01-34D6B825268F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CDC790E-8639-43DC-BE01-34D6B825268F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{895DE529-69B1-4053-A842-EFDF8A2F2BBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895DE529-69B1-4053-A842-EFDF8A2F2BBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895DE529-69B1-4053-A842-EFDF8A2F2BBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{895DE529-69B1-4053-A842-EFDF8A2F2BBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9BFCF25-6B1C-4F0F-896A-86EF63B7A973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9BFCF25-6B1C-4F0F-896A-86EF63B7A973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9BFCF25-6B1C-4F0F-896A-86EF63B7A973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9BFCF25-6B1C-4F0F-896A-86EF63B7A973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E55475C-3C45-4BC2-BCF9-79A914AA91CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E55475C-3C45-4BC2-BCF9-79A914AA91CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E55475C-3C45-4BC2-BCF9-79A914AA91CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E55475C-3C45-4BC2-BCF9-79A914AA91CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3847A8D0-9C71-4E13-B63C-770A7AFAF4BF}
+	EndGlobalSection
+EndGlobal

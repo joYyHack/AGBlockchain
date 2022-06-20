@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Protobuf Include="gRPC\Protos\blockchain.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Coravel" Version="4.1.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.44.0" />
+    <PackageReference Include="Grpc.Core.Api" Version="2.45.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.45.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AGBlockchain.Service\AGBlockchain.Service.csproj" />
+    <ProjectReference Include="..\AGBlockchain.Structure\AGBlockchain.Structure.csproj" />
+    <ProjectReference Include="..\AGUtils\AGUtils.csproj" />
+  </ItemGroup>
+
+</Project>

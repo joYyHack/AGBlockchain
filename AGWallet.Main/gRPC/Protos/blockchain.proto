@@ -1,0 +1,97 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "AGBlockchain.gRPC.Client";
+
+//########### 
+//  Service
+//###########
+service Blockchain {
+  rpc GenesisBlock(google.protobuf.Empty) returns (BlockResponse);
+  rpc LastBlock(google.protobuf.Empty) returns (BlockResponse);
+  rpc Send(SendRequest) returns (Response);
+  rpc GetBlocks(BlockRequest) returns (BlocksResponse);
+  rpc GetBalance(AccountRequest) returns (BalanceResponse);
+  rpc GetTransactions(AccountRequest) returns (TransactionsResponse);
+}
+
+//############ 
+//  Requests
+//############
+message SendRequest {
+  string transaction_id = 1;
+  string public_key = 2;
+  TransactionInput transaction_input = 3;
+  TransactionOutput transaction_output = 4;
+}
+
+message AccountRequest {
+    string address = 1;
+}
+
+message BlockRequest {
+    int32 page_number = 1;
+    int32 blocks_per_page = 2;
+}
+
+//############# 
+//  Responses
+//#############
+message Response {
+    bool is_successful = 1;
+    string message = 2;
+}
+
+message BlockResponse {
+    BlockModel block = 1;
+}
+
+message BlocksResponse {
+    repeated BlockModel blocks = 1;
+}
+
+message TransactionsResponse {
+    repeated TransactionModel transactions = 1;
+}
+
+message TransactionResponse {
+    TransactionModel transaction = 1;
+}
+
+message BalanceResponse {
+    double amount = 1;
+}
+
+//########## 
+//  Models
+//##########
+message BlockModel {
+    int64 height = 1;
+    int64 timestamp = 2;
+    string hash = 3;
+    string previous_hash = 4;
+    repeated TransactionModel transactions = 5;
+}
+
+message TransactionModel {
+    string id = 1;
+    string signature = 2;
+    int64 timestamp = 3;
+    string sender = 4;
+    string recipient = 5;
+    double amount = 6;
+    double fee = 7;
+}
+
+message TransactionInput {
+    int64 timestamp = 1;
+    string sender = 2;
+    string signature = 3;
+}
+
+message TransactionOutput {
+    string recipient = 1;
+    double amount = 2;
+    double fee = 3;
+}
